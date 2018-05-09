@@ -62,4 +62,10 @@ $(function() {
 	/*回到顶部*/
 	$('#toTopHover').UItoTop({ easingType: 'easeOutQuart' });
 
+	/*nav锚链接*/
+	$(".scroll").click(function(event){		
+		event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+	});
+
 })
