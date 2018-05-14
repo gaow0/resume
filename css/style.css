@@ -778,7 +778,7 @@ div#portfolioModal1,div#portfolioModal2,div#portfolioModal3,div#portfolioModal4,
 	transform: rotate(90deg);
 }
 .yes_marg{
-	margin-top:30px;
+	/*margin-top:30px;*/
 }
 /*-- //portfolio --*/
 /*-- skills --*/
@@ -1241,7 +1241,7 @@ background:#fff;
 		padding: 0 6px;
 	}
 	.yes_marg {
-		margin-top: 12px;
+		/*margin-top: 12px;*/
 	}
 	.resp-tab-item {
 		margin: 0 12px;
