@@ -1,4 +1,14 @@
 $(function() {
+
+	/*刷新返回页面顶部*/
+	addEventListener("load", function() {
+		setTimeout(hideURLbar, 0);
+	}, false);
+
+	function hideURLbar() {
+		window.scrollTo(0, 1);
+	}
+
 	/*教育*/
 	function close_accordion_section() {
 		$('.accordion .accordion-section-title').removeClass('active');
@@ -32,40 +42,88 @@ $(function() {
 
 
 	/**联系方式tips**/
-	$('#git').tipso({
-		width: 80,
-		background: '#337ab7'
-	});
-	$('#qq').tipso({
-		userTitle: false,
-		width: 150,
-		background: '#337ab7',
-		content: '<img style="width:100%;"  src="images/contact/qq.JPG" alt="QQ"/>'
-	});
-	$('#wx').tipso({
-		userTitle: false,
-		width: 150,
-		background: '#337ab7',
-		content: '<img style="width:100%;"  src="images/contact/wx.JPG" alt="WeChat"/>'
-	});
-	$('#email').tipso({
-		width: 170,
-		background: '#337ab7'
+	$('#git').contip({
+		align: 'top',
+		bg: '#337ab7',
+		fade: 200,
+		rise: 0,
+		show: false,
+		trigger: 'hover',
+		html: 'gitHub'
 	});
 
-	/*页面开始动画*/	
+	$('#qq').contip({
+		align: 'top',
+		bg: '#337ab7',
+		fade: 200,
+		rise: 0,
+		max_width: 150,
+		show: false,
+		trigger: 'hover',
+		html: '<img style="width:100%;"  src="images/contact/qq.JPG" alt="QQ"/>'
+	});
+
+	$('#wx').contip({
+		align: 'top',
+		bg: '#337ab7',
+		fade: 200,
+		rise: 0,
+		max_width: 150,
+		show: false,
+		trigger: 'hover',
+		html: '<img style="width:100%;"  src="images/contact/wx.JPG" alt="WeChat"/>'
+	});
+
+	$('#email').contip({
+		align: 'top',
+		bg: '#337ab7',
+		fade: 200,
+		rise: 0,
+		show: false,
+		trigger: 'hover',
+		html: '1104943970@qq.com'
+	});
+
+
+	// $('#git').tipso({
+	// 	width: 80,
+	// 	background: '#337ab7'
+	// });
+	// $('#qq').tipso({
+	// 	userTitle: false,
+	// 	width: 150,
+	// 	background: '#337ab7',
+	// 	content: '<img style="width:100%;"  src="images/contact/qq.JPG" alt="QQ"/>'
+	// });
+	// $('#wx').tipso({
+	// 	userTitle: false,
+	// 	width: 150,
+	// 	background: '#337ab7',
+	// 	content: '<img style="width:100%;"  src="images/contact/wx.JPG" alt="WeChat"/>'
+	// });
+	// $('#email').tipso({
+	// 	width: 170,
+	// 	background: '#337ab7'
+	// });
+
+
+	/*页面开始动画*/
 	setTimeout(function() {
 		$('body').addClass('loaded');
 		$('h1').css('color', '#222222');
 	}, 1000);
-	
+
 	/*回到顶部*/
-	$('#toTopHover').UItoTop({ easingType: 'easeOutQuart' });
+	$('#toTopHover').UItoTop({
+		easingType: 'easeOutQuart'
+	});
 
 	/*nav锚链接*/
-	$(".scroll").click(function(event){		
+	$(".scroll").click(function(event) {
 		event.preventDefault();
-		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		$('html,body').animate({
+			scrollTop: $(this.hash).offset().top
+		}, 1000);
 	});
 
 })
