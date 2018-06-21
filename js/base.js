@@ -41,70 +41,8 @@ $(function() {
 	});
 
 
-	/**联系方式tips**/
-	$('#git').contip({
-		align: 'top',
-		bg: '#337ab7',
-		fade: 200,
-		rise: 0,
-		show: false,
-		trigger: 'hover',
-		html: 'gitHub'
-	});
+	
 
-	$('#qq').contip({
-		align: 'top',
-		bg: '#337ab7',
-		fade: 200,
-		rise: 0,
-		max_width: 150,
-		show: false,
-		trigger: 'hover',
-		html: '<img style="width:100%;"  src="images/contact/qq.JPG" alt="QQ"/>'
-	});
-
-	$('#wx').contip({
-		align: 'top',
-		bg: '#337ab7',
-		fade: 200,
-		rise: 0,
-		max_width: 150,
-		show: false,
-		trigger: 'hover',
-		html: '<img style="width:100%;"  src="images/contact/wx.JPG" alt="WeChat"/>'
-	});
-
-	$('#email').contip({
-		align: 'top',
-		bg: '#337ab7',
-		fade: 200,
-		rise: 0,
-		show: false,
-		trigger: 'hover',
-		html: '1104943970@qq.com'
-	});
-
-
-	// $('#git').tipso({
-	// 	width: 80,
-	// 	background: '#337ab7'
-	// });
-	// $('#qq').tipso({
-	// 	userTitle: false,
-	// 	width: 150,
-	// 	background: '#337ab7',
-	// 	content: '<img style="width:100%;"  src="images/contact/qq.JPG" alt="QQ"/>'
-	// });
-	// $('#wx').tipso({
-	// 	userTitle: false,
-	// 	width: 150,
-	// 	background: '#337ab7',
-	// 	content: '<img style="width:100%;"  src="images/contact/wx.JPG" alt="WeChat"/>'
-	// });
-	// $('#email').tipso({
-	// 	width: 170,
-	// 	background: '#337ab7'
-	// });
 
 
 	/*页面开始动画*/
@@ -126,4 +64,58 @@ $(function() {
 		}, 1000);
 	});
 
-})
+});
+
+/**联系方式tips**/
+var showTips = function(type){
+	if(type == 'git'){
+		layer.tips('https://github.com/gaowi', '#git', {
+			tips: [1, '#337ab7'] //还可配置颜色
+		});
+	}
+
+
+
+	if(type == 'qq'){
+		// layer.tips('<img style="width:100%;"  src="images/contact/qq.JPG" alt="QQ"/>', '#qq', {
+		// 	tips: [1, '#337ab7'] //还可配置颜色
+		// });
+		// 
+		layer.open({
+			type: 1,
+			title:'',
+			skin: 'layui-layer-demo', //样式类名
+			closeBtn: 0, //不显示关闭按钮
+			anim: 1,
+			shadeClose: true, //开启遮罩关闭
+			content: "<img alt='' src='images/contact/qq.JPG' style='width:180px;height:180px;padding:20px;'>"
+		});
+	}
+
+
+
+	if(type == 'wx'){
+		// layer.tips('<img style="width:100%;"  src="images/contact/wx.JPG" alt="WeChat"/>', '#wx', {
+		// 	tips: [1, '#337ab7'] //还可配置颜色
+		// });
+		layer.open({
+			type: 1,
+			title:'',
+			skin: 'layui-layer-demo', //样式类名
+			closeBtn: 0, //不显示关闭按钮
+			anim: 2,
+			shadeClose: true, //开启遮罩关闭
+			content: "<img alt='' src='images/contact/wx.JPG' style='width:180px;height:180px;padding:20px;'>"
+		});
+	}
+
+	if(type == 'email'){
+		layer.tips('1104943970@qq.com', '#email', {
+			tips: [1, '#337ab7'] //还可配置颜色
+		});
+	}
+}
+
+var hideTips = function(){
+	layer.closeAll();
+}

@@ -9,9 +9,9 @@ $(function() {
 	});
 
 	//禁止页面选择以及鼠标右键
-	document.oncontextmenu = function() {
-		return false;
-	};
+	// document.oncontextmenu = function() {
+	// 	return false;
+	// };
 	// document.onselectstart = function() {
 	// 	return false;
 	// };

@@ -15,6 +15,9 @@ ul,label{
 	margin:0;
 	padding:0;
 }
+.hand{
+	cursor:pointer;
+}
 input[type="button"],input[type="submit"]{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -55,7 +58,7 @@ body a:hover{
 	top:0;
 	left:0;
 	background:rgba(255,255,255,0.8);
-	z-index: 1;
+	z-index: 13;
 }
 .menu-box{
 	position: fixed;
@@ -63,7 +66,7 @@ body a:hover{
 	top:4.5rem;
 	height:100%;
 	background:rgba(34,34,34,0.9);
-	z-index: 2;
+	z-index: 15;
 	transition:left 0.5s;
 }
 .menu-fixed-hide{
@@ -81,7 +84,7 @@ body a:hover{
 	top:0;
 	background:rgba(34,34,34,0.9);
 	border-bottom: 1px solid #fff;
-	z-index: 10;
+	z-index: 15;
 }
 #menu_check{
 	margin:0.6rem 0 0 0.6rem;
@@ -1032,6 +1035,10 @@ background:#fff;
 .fileUpload.btn {
 	padding: 9px 18px;
 	border-radius:0px;
+}
+
+.layui-layer-content{
+	border-radius: 10px !important;
 }
 /*-- //contact --*/
 /*-- responsive media queries --*/
@@ -1988,5 +1995,17 @@ background:#fff;
 	}
 
 	/*//nav*/
+}
+
+
+/*畅言*/
+#SOHUCS #SOHU_MAIN .module-cmt-box .post-wrap-w div.post-wrap-main{
+	background:none !important;
+}
+
+#SOHUCS #SOHU_MAIN .module-cmt-footer .section-service-w{
+	width: 0px;
+    height: 0px;
+    overflow: hidden;
 }
 
