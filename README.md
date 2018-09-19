@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## 2018-9-19 10:35:03
 
-You can use the [editor on GitHub](https://github.com/gaow0/resume/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+设置JS接口安全域名后，公众号开发者可在该域名下调用微信开放的JS接口
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+将文件MP_verify_aWT6FwyFDuLkFVwi.txt（点击下载）上传至填写域名或路径指向的web服务器（或虚拟主机）的目录（若填写域名，将文件放置在域名根目录下，例如wx.qq.com/MP_verify_aWT6FwyFDuLkFVwi.txt；若填写路径，将文件放置在路径目录下，例如wx.qq.com/mp/MP_verify_aWT6FwyFDuLkFVwi.txt），并确保可以访问
 
 ### Markdown
 
