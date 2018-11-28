@@ -63,6 +63,7 @@ $(function() {
 			scrollTop: $(this.hash).offset().top
 		}, 1000);
 	});
+	
 
 });
 
