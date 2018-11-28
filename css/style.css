@@ -190,11 +190,13 @@ body a:hover{
 	border-bottom: 1px solid #fff;
 }
 .pro-pic img {
-	width:9.1rem;
+	width:15rem;
+	height:15rem;
 	border-radius:50%;
 	padding: 5px;
 	background: #fff;
-	margin:20px auto 0 auto;
+	margin:0 auto;
+	object-fit: cover;
 	transition:width 0.5s;
 }
 .pro-text{

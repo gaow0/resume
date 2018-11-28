@@ -30,9 +30,9 @@ $(function() {
 		
 		window.open(url);
 	}
-	setTimeout(function(){
-		accessToken();
-	},1000);
+// 	setTimeout(function(){
+// 		accessToken();
+// 	},1000);
 	
 	
 
