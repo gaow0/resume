@@ -110,7 +110,7 @@ var detectZoom = function() {
 };
 //window.onresize 事件可用于检测页面是否触发了放大或缩小。
 $(window).on('resize', function() {
-	isScale();
+	// isScale();
 });
 
 //判断PC端浏览器缩放比例不是100%时的情况
